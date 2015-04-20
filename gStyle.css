@@ -1,38 +1,46 @@
 html, body{
-	height: 100%;
-    width: 100%;
 	font-family:arial, sans-serif;
 	font-size:13px;
 }
 
+html{
+	height:100%;
+	margin:0;
+	display:block;
+}
+
+body{
+	height:100%;
+	margin:0;
+}
+
 /* main div */
 #main{
+	margin:0 auto;
+	position:absolute;
 	width:100%;
-	height:100%;
+	min-height:100%;
+	min-width:980px;
+	display:block;
 }
 
 /*header*/
 #header {
-	border:1px dashed blue;
 	margin-top:15px;
 	height:30px;
 }
 #headLinkContainer{
-	border:inherit;
 	height:100%;
 	float:right;
 	padding-left:30px;
-	padding-right:30px;
+	padding-right:25px;
 }
-
 .headlink{
-    width:70px;
+    width:50px;
     height:30px;
     position:relative;
 	display:inline-block;
-	border:1px dashed gold;
 }
-
 .linkSpanner{
 	color: #404040;
 	line-height:30px;
@@ -44,15 +52,15 @@ html, body{
 	left: 0;
 	z-index: 1;
  }
-
 #options{
 	width:30px;
     background-image: url("http://ssl.gstatic.com/gb/images/i1_71651352.png");
 	background-repeat:no-repeat;
 	background-position:-97px -58px;
+	opacity:.55;
 }
-
 #signIn{
+	width:70px;
 	color:white;
 	font-weight:bold;
 	background-color: #4285F4;
@@ -63,5 +71,49 @@ html, body{
 }
 /* space between header and stuff in the middle */
 /* stuff in the middle */
+#middleStuff{
+	margin-top:10.75%;
+	display:block;
+	text-align:center;
+}
+#mainLogo{
+	height:95px;
+	width:269px;
+}
+#inputDiv{
+	border:1px gray solid;
+	padding:0px;
+	margin-top:22px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:initial;
+	width:570px;
+	height:28px;
+}
+#theInput{
+	border:none;
+	height:26px;
+	width:560px;
+	padding-left:10px;
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	vertical-align:top;
+}
+#micDiv{
+	position:relative;
+	background:url("data:image/gif;base64,R0lGODlhHAAmAKIHAKqqqsvLy0hISObm5vf394uLiwAAAP///yH5BAEAAAcALAAAAAAcACYAAAO9eLpMIMYIQJi9DcYtKv6KtnHgB4yoAZSXKAyDy1rjoAzjzOQLrx8+4OanCAZnxiExGSEKmz3lj2lwUq3SZ3WZPbKuXGgxu9t4tLYDTkpIRQILF0x2G4lWipM7gj/oJQUkcXsCDCIFATULBCIcZ2tvB3QLDxETFnR/BgU/gRt9jX0gnpYMkJZpFzEoqQqJKAIBaQOVKHAXr3t7txgBjboSvB8EpLoFZywOAo3LFE5lYs/QW9LT1TRk1V7S2xYJADs=");
+	background-size:14px 19px;
+	opacity:.6;
+	background-repeat:no-repeat;
+	background-position:center;
+	display:absolute;
+	left:0px;
+	margin-top:-28px;
+	margin-left:542px;
+	height:28px;
+	width:28px;
+	z-index: 1;
+}
 /* space between stuff in the middle and footer */
 /* footer */
